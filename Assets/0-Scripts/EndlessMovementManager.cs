@@ -4,25 +4,40 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EndlessMovementManager : MonoBehaviour {
-    public Transform groundSet1, groundSet2;
-    public Transform spawnPointDummy, movePointDummy;
+    public bool executeScript;
+    public string prefabName;
+    public float movePoint;
     public float moveSpeed = 0.1f;
+    public Transform joint;
+    public GameObject pairObject;
 
-    private void Update() {
-        groundSet1.transform.position = new Vector3(
-            groundSet1.transform.position.x-moveSpeed,
-            0,
-            0);
-        groundSet2.transform.position = new Vector3(
-            groundSet2.transform.position.x-moveSpeed,
-            0,
-            0);
-
-        if (groundSet1.transform.position.x < movePointDummy.position.x) {
-            groundSet1.transform.position = spawnPointDummy.position;
+    private void Start() {
+        if (executeScript) {
+            pairObject = Instantiate(Resources.Load(prefabName) as GameObject, joint);
+            pairObject.transform.localPosition = Vector3.zero;
         }
-        if (groundSet2.transform.position.x < movePointDummy.position.x) {
-            groundSet2.transform.position = spawnPointDummy.position;
+
+    }
+
+    /// <summary>
+    /// Update is called every frame, if the MonoBehaviour is enabled.
+    /// </summary>
+    void Update() {
+        if (executeScript) {
+            //transform.position = new Vector3(transform.position.x-moveSpeed, 0, 0);
+            transform.position += -transform.right * moveSpeed;
+
+            if (transform.position.x<=movePoint) {
+                pairObject.transform.SetParent(null);
+                transform.SetParent(pairObject.GetComponent<EndlessMovementManager>().joint);
+                transform.localPosition=Vector3.zero;
+                pairObject.GetComponent<EndlessMovementManager>().pairObject = gameObject;
+                if (GetComponent<ColumnGenerator>()) {
+                    GetComponent<ColumnGenerator>().GenerateColumns();
+                }
+                pairObject.GetComponent<EndlessMovementManager>().executeScript=true;
+                executeScript=false;
+            }
         }
     }
 }
