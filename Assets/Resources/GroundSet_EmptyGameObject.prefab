@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 528b6e8736cdf4bf4bb5587f521e0b95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  executeScript: 1
+  executeScript: 0
   prefabName: GroundSet_EmptyGameObject
   movePoint: -43
   moveSpeed: 0.1
@@ -69,6 +69,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabName: ColumnType1
+  gridPositions: []
+  emptyGrid: 
+  occupiedGrid: 
   gridStartDummyObject: {fileID: 6802980219375329709}
   gridEndDummyObject: {fileID: 3805926909469064226}
 --- !u!1 &2424649820046242939

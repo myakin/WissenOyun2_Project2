@@ -77,9 +77,9 @@ public class ColumnGenerator : MonoBehaviour {
 
 
     // grid yaklasimi degiskenleri+++++++++++++++++++++++++++++++++++++++++
-    public List<Vector3> gridPositions = new List<Vector3>(); 
-    public List<int> emptyGrid = new List<int>();
-    public List<int> occupiedGrid = new List<int>();
+    private List<Vector3> gridPositions = new List<Vector3>(); 
+    private List<int> emptyGrid = new List<int>();
+    private List<int> occupiedGrid = new List<int>();
     public GameObject gridStartDummyObject, gridEndDummyObject;
     
     
@@ -93,17 +93,21 @@ public class ColumnGenerator : MonoBehaviour {
         return returnValue;
     }
     private Vector3 GetGenerationPosition() {
-        int indexNo = GetGridIndex();
-        Debug.Log("Chosen index no = "+indexNo);
-        return gridPositions[indexNo];
+        return gridPositions[GetGridIndex()];
     }
     private void GenerateGrid() {
+        int numberOfGridCells = 9;
         float distance = (gridStartDummyObject.transform.position - gridEndDummyObject.transform.position).magnitude;
-        float gridWidth = distance/10;
-        for (int i=0; i<10; i++) {
-            Vector3 gridLocalPos = gridStartDummyObject.transform.localPosition + (gridStartDummyObject.transform.right * (gridWidth * (i + 1) / 2));
+        float gridWidth = distance/numberOfGridCells;
+        for (int i=0; i<numberOfGridCells; i++) {
+            Vector3 gridLocalPos = gridStartDummyObject.transform.localPosition + (gridStartDummyObject.transform.right * (gridWidth * (i + 1))) + (-gridStartDummyObject.transform.right * (gridWidth/2));
             gridPositions.Add(gridLocalPos);
             emptyGrid.Add(i); // ilk olusturulurken tum gridler bos, grid numarasini emptyGrid listesine ekliyoruz
+
+            // grid pozisyonlarini debug etmek icin fake kureler kullandik... gercek oyunda comment'e alin
+            // GameObject debugObject = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            // debugObject.transform.SetParent(transform);
+            // debugObject.transform.localPosition = gridLocalPos;
         }
         // 0 grid (gridStartDummyObject.transform.localPosition + gridWidth * 1)/2
         // 1 grid (gridStartDummyObject.transform.localPosition + gridWidth * 2)/2
@@ -131,8 +135,10 @@ public class ColumnGenerator : MonoBehaviour {
         int numOfgenerations = Random.Range(1,3);
         for (int i=0; i<numOfgenerations; i++) {
             GameObject generatedObject = Instantiate(Resources.Load(prefabName) as GameObject, transform);
+            // koloun localPosition.y'si minimum 0.73 - maximum 4.07 - generate edilen y = -1.36;
             generatedObject.transform.localPosition = GetGenerationPosition();
             generatedObjects.Add(generatedObject);
+
         }
     }
     public void DestroyGeneration() {
