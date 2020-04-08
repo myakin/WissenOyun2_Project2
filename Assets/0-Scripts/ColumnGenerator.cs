@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ColumnGenerator : MonoBehaviour {
-    public string prefabName;
+    public string[] prefabNames;
     private List<GameObject> generatedObjects = new List<GameObject>();
 
     
@@ -16,7 +16,8 @@ public class ColumnGenerator : MonoBehaviour {
 
     //     int numOfgenerations = Random.Range(1,3);
     //     for (int i=0; i<numOfgenerations; i++) {
-    //         GameObject generatedObject = Instantiate(Resources.Load(prefabName) as GameObject, transform);
+    //     int chosenPrefabIndex = Random.Range(0, prefabNames.Length);
+    //         GameObject generatedObject = Instantiate(Resources.Load(prefabNames[chosenPrefabIndex]) as GameObject, transform);
     //         float generationX = GetGenerationPoint(generatedObject, GetGenerationBounds(generatedObject));
     //         generatedObject.transform.localPosition = new Vector3(
     //             generationX,
@@ -80,7 +81,7 @@ public class ColumnGenerator : MonoBehaviour {
     private List<Vector3> gridPositions = new List<Vector3>(); 
     private List<int> emptyGrid = new List<int>();
     private List<int> occupiedGrid = new List<int>();
-    public GameObject gridStartDummyObject, gridEndDummyObject;
+    public GameObject gridStartDummyObject, gridEndDummyObject, columnMinHeightDummyObject, columnMaxHeightDummyObject;
     
     
     // grid yaklasimi fonksiyonlari
@@ -134,9 +135,11 @@ public class ColumnGenerator : MonoBehaviour {
 
         int numOfgenerations = Random.Range(1,3);
         for (int i=0; i<numOfgenerations; i++) {
-            GameObject generatedObject = Instantiate(Resources.Load(prefabName) as GameObject, transform);
-            // koloun localPosition.y'si minimum 0.73 - maximum 4.07 - generate edilen y = -1.36;
-            generatedObject.transform.localPosition = GetGenerationPosition();
+            int chosenPrefabIndex = Random.Range(0, prefabNames.Length);
+            GameObject generatedObject = Instantiate(Resources.Load(prefabNames[chosenPrefabIndex]) as GameObject, transform);
+            Vector3 generatedLocalPos = GetGenerationPosition();
+            float valueY = Random.Range(columnMinHeightDummyObject.transform.localPosition.y, columnMaxHeightDummyObject.transform.localPosition.y);
+            generatedObject.transform.localPosition = new Vector3(generatedLocalPos.x, valueY, generatedLocalPos.z);
             generatedObjects.Add(generatedObject);
 
         }
