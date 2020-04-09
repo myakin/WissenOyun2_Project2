@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour {
     public Transform backgroundPanel, mainMenuPanel;
     public Button newGameButton, hiScoresButton, exitGameButton;
+    public Text scoreText;
+    
+
 
     private void Start() {
         backgroundPanel.gameObject.SetActive(false);
@@ -21,6 +24,7 @@ public class UIManager : MonoBehaviour {
     }
 
     private void StartNewGame() {
+        ResetScore();
         backgroundPanel.gameObject.SetActive(false);
         mainMenuPanel.gameObject.SetActive(false);
         GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<PlayerControllerForManuelSetup>().InitiatePlayer();
@@ -33,7 +37,13 @@ public class UIManager : MonoBehaviour {
     private void QuitGame() {
 
     }
-
+    
+    public void UpdateScoreText(string aScoreString) {
+        scoreText.text = aScoreString;
+    }
+    private void ResetScore() {
+        scoreText.text = "0";
+    }
 
 
 }
