@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
     public Transform backgroundPanel, mainMenuPanel;
-    public Button newGameButton, hiScoresButton, exitGameButton;
+    public Button loadCheckpointButton, newGameButton, hiScoresButton, exitGameButton;
     public Text scoreText;
     
 
@@ -13,6 +13,8 @@ public class UIManager : MonoBehaviour {
     private void Start() {
         backgroundPanel.gameObject.SetActive(false);
         mainMenuPanel.gameObject.SetActive(false);
+
+        loadCheckpointButton.onClick.AddListener(LoadCheckpoint);
         newGameButton.onClick.AddListener(StartNewGame);
         hiScoresButton.onClick.AddListener(GetHiScores);
         exitGameButton.onClick.AddListener(QuitGame);
@@ -28,6 +30,10 @@ public class UIManager : MonoBehaviour {
         backgroundPanel.gameObject.SetActive(false);
         mainMenuPanel.gameObject.SetActive(false);
         GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<PlayerControllerForManuelSetup>().InitiatePlayer();
+    }
+
+    private void LoadCheckpoint() {
+         GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<PlayerControllerForManuelSetup>().ResumeLastSave();  
     }
 
     private void GetHiScores() {
