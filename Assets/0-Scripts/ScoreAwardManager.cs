@@ -13,7 +13,9 @@ public class ScoreAwardManager : MonoBehaviour {
             } else if (other.GetComponent<PlayerControllerForManuelSetup>()) {
                 other.GetComponent<PlayerControllerForManuelSetup>().AddToScore(awardAmount);
             }
-            Destroy(gameObject);
+            ObjectSpawnHandler.Instance.SpawnObject("CoinCollect_Particle System", transform.position, Quaternion.identity, true);
+            // Destroy(gameObject);
+            ObjectSpawnHandler.Instance.DespawnObject(gameObject);
         }
     }
 }

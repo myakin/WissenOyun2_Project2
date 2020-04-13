@@ -29,7 +29,7 @@ public class UIManager : MonoBehaviour {
         ResetScore();
         backgroundPanel.gameObject.SetActive(false);
         mainMenuPanel.gameObject.SetActive(false);
-        GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<PlayerControllerForManuelSetup>().InitiatePlayer();
+        GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<PlayerControllerForManuelSetup>().StartNewGame();
     }
 
     private void LoadCheckpoint() {

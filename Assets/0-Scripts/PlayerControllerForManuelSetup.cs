@@ -15,7 +15,7 @@ public class PlayerControllerForManuelSetup : MonoBehaviour {
     private int score;
     private float lastPositionX;
     private IEnumerator displacementScoreCoroutine;
-    private List<GameObject> generatedPuffEffects = new List<GameObject>();
+    
 
 
     private void Start() {
@@ -24,14 +24,16 @@ public class PlayerControllerForManuelSetup : MonoBehaviour {
         if (SaveLoadManager.Instance.CheckSavedGame()) { // load previous game
             ResumeLastSave();
         } else { // new game
-            InitiatePlayer();
+            StartNewGame();
         }
     }
 
-    public void InitiatePlayer() {
+    public void StartNewGame() {
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         GetComponent<Rigidbody2D>().angularVelocity = 0;
-        ClearPuffEffects();
+        ObjectSpawnHandler.Instance.ClearEffects();
+        ObjectSpawnHandler.Instance.ReSpawnCoins();
+        SoundManager.Instance.ResetSounds();
 
         transform.position = initialPosition;
         transform.rotation = initialRotation;
@@ -48,12 +50,15 @@ public class PlayerControllerForManuelSetup : MonoBehaviour {
             displacementScoreCoroutine = SetDisplacementScore();
             StartCoroutine(displacementScoreCoroutine);
         }
+
+        
     }
 
     public void ResumeLastSave() {
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         GetComponent<Rigidbody2D>().angularVelocity = 0;
-        ClearPuffEffects();
+        ObjectSpawnHandler.Instance.ClearEffects();
+        SoundManager.Instance.ResetSounds();
 
         if (SaveLoadManager.Instance.LoadGame()) {
             GetComponent<Animator>().SetBool("isDead", false);
@@ -70,12 +75,7 @@ public class PlayerControllerForManuelSetup : MonoBehaviour {
         }
     }
 
-    private void ClearPuffEffects() {
-        for (int i=0; i<generatedPuffEffects.Count; i++) {
-            Destroy(generatedPuffEffects[i]);
-        }
-        generatedPuffEffects.Clear();
-    }
+    
 
 
     
@@ -103,16 +103,18 @@ public class PlayerControllerForManuelSetup : MonoBehaviour {
     private void Die() {
         GetComponent<Animator>().SetBool("isDead", true);
         // playerSpriteRenderer.sprite = deadSprite;
-        GameObject puffEffectGameObject = Instantiate(Resources.Load("CrashPuff_Particle System") as GameObject, transform.position, Quaternion.identity);
-        generatedPuffEffects.Add(puffEffectGameObject);
+        ObjectSpawnHandler.Instance.SpawnObject("CrashPuff_Particle System", transform.position, Quaternion.identity, true);
         isDead = true;
         GameObject.FindGameObjectWithTag("UIInterface").GetComponent<UIManager>().ActivteMainMenu();
+        SoundManager.Instance.PlaySoundsOnFail();
     }
 
     public void AddToScore(int anIncrement) {
         score+=anIncrement;
         GameObject.FindGameObjectWithTag("UIInterface").GetComponent<UIManager>().UpdateScoreText(score.ToString());
+        
     }
+    
 
     private int CalculateDisplacementScore() {
         int increment = (int)((transform.position.x - lastPositionX) * displacementScoreCoefficient);
