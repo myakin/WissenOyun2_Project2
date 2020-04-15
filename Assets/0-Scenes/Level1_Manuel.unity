@@ -189,7 +189,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &55151988
 GameObject:
@@ -202,9 +202,9 @@ GameObject:
   - component: {fileID: 55151989}
   - component: {fileID: 55151991}
   - component: {fileID: 55151990}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -309,9 +309,9 @@ GameObject:
   - component: {fileID: 79727185}
   - component: {fileID: 79727187}
   - component: {fileID: 79727186}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -416,9 +416,9 @@ GameObject:
   - component: {fileID: 84915427}
   - component: {fileID: 84915429}
   - component: {fileID: 84915428}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -521,9 +521,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 91642855}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSet_EmptyGameObject (8)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -556,9 +556,9 @@ GameObject:
   - component: {fileID: 143733443}
   - component: {fileID: 143733445}
   - component: {fileID: 143733444}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -694,7 +694,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161019518
 GameObject:
@@ -705,9 +705,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 161019520}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSet_EmptyGameObject
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -804,6 +804,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 192392624}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &209489205
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1699570638972214103, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699570638972214103, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699570638972214103, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699570638972214103, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699570638972214103, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699570638972214103, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699570638972214103, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699570638972214103, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699570638972214103, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699570638972214103, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699570638972214103, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248131587259713515, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemyBullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 6248131587259713515, guid: 76b608cc13e1f424baeef9982bc9b0da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 76b608cc13e1f424baeef9982bc9b0da, type: 3}
 --- !u!1 &210985176
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,9 +966,9 @@ GameObject:
   - component: {fileID: 217651070}
   - component: {fileID: 217651072}
   - component: {fileID: 217651071}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -998,7 +1072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 238622391}
   - component: {fileID: 238622392}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1134,7 +1208,7 @@ Transform:
   - {fileID: 1978834355}
   - {fileID: 1771000765}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &294349007
 GameObject:
@@ -1147,9 +1221,9 @@ GameObject:
   - component: {fileID: 294349008}
   - component: {fileID: 294349010}
   - component: {fileID: 294349009}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1252,7 +1326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 295843552}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkySet_EmptyGameObject (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1286,9 +1360,9 @@ GameObject:
   - component: {fileID: 296822996}
   - component: {fileID: 296822998}
   - component: {fileID: 296822997}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1391,7 +1465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 301194942}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkySet_EmptyGameObject (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1423,9 +1497,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 371000897}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSet_EmptyGameObject (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1533,7 +1607,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 428781612}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkySet_EmptyGameObject (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1565,9 +1639,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 458875103}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSet_EmptyGameObject (5)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1600,9 +1674,9 @@ GameObject:
   - component: {fileID: 473881147}
   - component: {fileID: 473881149}
   - component: {fileID: 473881148}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1818,7 +1892,7 @@ PrefabInstance:
     - target: {fileID: 5379679596396713089, guid: 5ac244ad1e492436bb6ffe08b1f171c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5379679596396713089, guid: 5ac244ad1e492436bb6ffe08b1f171c2,
         type: 3}
@@ -1927,7 +2001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 530807875}
   - component: {fileID: 530807876}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2008,9 +2082,9 @@ GameObject:
   - component: {fileID: 536444388}
   - component: {fileID: 536444390}
   - component: {fileID: 536444389}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2113,9 +2187,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 546618936}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSet_EmptyGameObject (4)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2262,7 +2336,7 @@ PrefabInstance:
     - target: {fileID: 5379679596396713089, guid: 5ac244ad1e492436bb6ffe08b1f171c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5379679596396713089, guid: 5ac244ad1e492436bb6ffe08b1f171c2,
         type: 3}
@@ -2297,9 +2371,9 @@ GameObject:
   - component: {fileID: 645542291}
   - component: {fileID: 645542293}
   - component: {fileID: 645542292}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2404,9 +2478,9 @@ GameObject:
   - component: {fileID: 669699909}
   - component: {fileID: 669699911}
   - component: {fileID: 669699910}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2511,9 +2585,9 @@ GameObject:
   - component: {fileID: 686844631}
   - component: {fileID: 686844633}
   - component: {fileID: 686844632}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2696,7 +2770,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &709469983
 GameObject:
@@ -2726,7 +2800,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &733404574
 GameObject:
@@ -2739,9 +2813,9 @@ GameObject:
   - component: {fileID: 733404575}
   - component: {fileID: 733404577}
   - component: {fileID: 733404576}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2844,9 +2918,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 740771410}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSet_EmptyGameObject (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2898,7 +2972,8 @@ AudioSource:
   m_GameObject: {fileID: 746980244}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8080899814495697020, guid: ec534bb87eef747c987c04e1acb1cc94,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 2dc0fd73feccc4f11ac338252306d24a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2994,7 +3069,8 @@ AudioSource:
   m_GameObject: {fileID: 746980244}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3762032460539149795, guid: ec534bb87eef747c987c04e1acb1cc94,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: a3d9e5be1c19645d7b0aefde0bc35958, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -3093,7 +3169,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &746980248
 MonoBehaviour:
@@ -3120,7 +3196,8 @@ AudioSource:
   m_GameObject: {fileID: 746980244}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1081014555892395841, guid: ec534bb87eef747c987c04e1acb1cc94,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 53d0e5bfd1f1a4a74a4f67d01a96d7ac, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -3216,7 +3293,8 @@ AudioSource:
   m_GameObject: {fileID: 746980244}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5201170033463268538, guid: ec534bb87eef747c987c04e1acb1cc94,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: cca6644d97e0d44278999fb9f29ac981, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -3511,9 +3589,9 @@ GameObject:
   - component: {fileID: 754366096}
   - component: {fileID: 754366098}
   - component: {fileID: 754366097}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3618,9 +3696,9 @@ GameObject:
   - component: {fileID: 771832470}
   - component: {fileID: 771832472}
   - component: {fileID: 771832471}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3723,9 +3801,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 806918360}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSet_EmptyGameObject (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3797,7 +3875,7 @@ PrefabInstance:
     - target: {fileID: 7243497016923999256, guid: 4d5f7d4c29b35473abf3f0340cb89993,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 7243497016923999256, guid: 4d5f7d4c29b35473abf3f0340cb89993,
         type: 3}
@@ -3832,9 +3910,9 @@ GameObject:
   - component: {fileID: 827039521}
   - component: {fileID: 827039523}
   - component: {fileID: 827039522}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4014,9 +4092,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 879231012}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSet_EmptyGameObject (6)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4070,7 +4148,7 @@ Transform:
   m_Children:
   - {fileID: 749030407}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &889317093
 Rigidbody2D:
@@ -4139,9 +4217,9 @@ GameObject:
   - component: {fileID: 901564110}
   - component: {fileID: 901564112}
   - component: {fileID: 901564111}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4246,9 +4324,9 @@ GameObject:
   - component: {fileID: 903952824}
   - component: {fileID: 903952826}
   - component: {fileID: 903952825}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4353,9 +4431,9 @@ GameObject:
   - component: {fileID: 920759763}
   - component: {fileID: 920759765}
   - component: {fileID: 920759764}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4574,7 +4652,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &975380803
 GameObject:
@@ -4587,9 +4665,9 @@ GameObject:
   - component: {fileID: 975380804}
   - component: {fileID: 975380806}
   - component: {fileID: 975380805}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4812,9 +4890,9 @@ GameObject:
   - component: {fileID: 1034368061}
   - component: {fileID: 1034368063}
   - component: {fileID: 1034368062}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4995,7 +5073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1061731873}
   - component: {fileID: 1061731874}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5075,7 +5153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1068562763}
   - component: {fileID: 1068562764}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5154,7 +5232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1075795533}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkySet_EmptyGameObject (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5187,7 +5265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1076952878}
   - component: {fileID: 1076952879}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5268,9 +5346,9 @@ GameObject:
   - component: {fileID: 1088010124}
   - component: {fileID: 1088010126}
   - component: {fileID: 1088010125}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5375,9 +5453,9 @@ GameObject:
   - component: {fileID: 1101024839}
   - component: {fileID: 1101024841}
   - component: {fileID: 1101024840}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5481,7 +5559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1137718226}
   - component: {fileID: 1137718227}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5596,7 +5674,7 @@ PrefabInstance:
     - target: {fileID: 5379679596396713089, guid: 5ac244ad1e492436bb6ffe08b1f171c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5379679596396713089, guid: 5ac244ad1e492436bb6ffe08b1f171c2,
         type: 3}
@@ -5631,9 +5709,9 @@ GameObject:
   - component: {fileID: 1159273531}
   - component: {fileID: 1159273533}
   - component: {fileID: 1159273532}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5772,7 +5850,7 @@ PrefabInstance:
     - target: {fileID: 7243497016923999256, guid: 4d5f7d4c29b35473abf3f0340cb89993,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7243497016923999256, guid: 4d5f7d4c29b35473abf3f0340cb89993,
         type: 3}
@@ -5871,6 +5949,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1179058459}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1184252352
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1817959218, guid: 96d93164f4d124157ab00240c20cf7a5, type: 3}
+      propertyPath: deadSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a9871d79d525ab499dd167fd35c46ad,
+        type: 3}
+    - target: {fileID: 96109905652097002, guid: 96d93164f4d124157ab00240c20cf7a5,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemyBird
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821352742094816949, guid: 96d93164f4d124157ab00240c20cf7a5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 35.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821352742094816949, guid: 96d93164f4d124157ab00240c20cf7a5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821352742094816949, guid: 96d93164f4d124157ab00240c20cf7a5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821352742094816949, guid: 96d93164f4d124157ab00240c20cf7a5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821352742094816949, guid: 96d93164f4d124157ab00240c20cf7a5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821352742094816949, guid: 96d93164f4d124157ab00240c20cf7a5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821352742094816949, guid: 96d93164f4d124157ab00240c20cf7a5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821352742094816949, guid: 96d93164f4d124157ab00240c20cf7a5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821352742094816949, guid: 96d93164f4d124157ab00240c20cf7a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821352742094816949, guid: 96d93164f4d124157ab00240c20cf7a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821352742094816949, guid: 96d93164f4d124157ab00240c20cf7a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 96d93164f4d124157ab00240c20cf7a5, type: 3}
 --- !u!1 &1205009933
 GameObject:
   m_ObjectHideFlags: 0
@@ -5881,7 +6033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1205009934}
   - component: {fileID: 1205009935}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5960,9 +6112,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1219501970}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSet_EmptyGameObject (11)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6069,7 +6221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1250058203}
   - component: {fileID: 1250058204}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6149,7 +6301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1277922783}
   - component: {fileID: 1277922784}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6264,7 +6416,7 @@ PrefabInstance:
     - target: {fileID: 5379679596396713089, guid: 5ac244ad1e492436bb6ffe08b1f171c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5379679596396713089, guid: 5ac244ad1e492436bb6ffe08b1f171c2,
         type: 3}
@@ -6451,9 +6603,9 @@ GameObject:
   - component: {fileID: 1484997705}
   - component: {fileID: 1484997707}
   - component: {fileID: 1484997706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6557,7 +6709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1490936260}
   - component: {fileID: 1490936261}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6638,9 +6790,9 @@ GameObject:
   - component: {fileID: 1542757008}
   - component: {fileID: 1542757010}
   - component: {fileID: 1542757009}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6744,7 +6896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1552412757}
   - component: {fileID: 1552412758}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6953,7 +7105,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1585257727
 PrefabInstance:
@@ -7189,7 +7341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1598308900}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkySet_EmptyGameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7223,9 +7375,9 @@ GameObject:
   - component: {fileID: 1602968698}
   - component: {fileID: 1602968700}
   - component: {fileID: 1602968699}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7329,7 +7481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1634745286}
   - component: {fileID: 1634745285}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7409,7 +7561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1651610448}
   - component: {fileID: 1651610449}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7563,9 +7715,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1690904711}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSet_EmptyGameObject (9)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7673,9 +7825,9 @@ GameObject:
   - component: {fileID: 1718560049}
   - component: {fileID: 1718560051}
   - component: {fileID: 1718560050}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7780,9 +7932,9 @@ GameObject:
   - component: {fileID: 1724398089}
   - component: {fileID: 1724398091}
   - component: {fileID: 1724398090}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7887,9 +8039,9 @@ GameObject:
   - component: {fileID: 1744278073}
   - component: {fileID: 1744278075}
   - component: {fileID: 1744278074}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8176,6 +8328,80 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000048637, y: 56}
   m_SizeDelta: {x: 333.2, y: 118.5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1769635127
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1218014708736260073, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 32.084045
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218014708736260073, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.141237
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218014708736260073, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218014708736260073, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218014708736260073, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218014708736260073, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218014708736260073, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218014708736260073, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218014708736260073, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218014708736260073, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218014708736260073, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2507719997535635564, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerBullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2507719997535635564, guid: 8407a0153a10548e08d119c73e8c907c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8407a0153a10548e08d119c73e8c907c, type: 3}
 --- !u!1001 &1771000764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8365,7 +8591,7 @@ RectTransform:
   - {fileID: 210985177}
   - {fileID: 1683229154}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8381,7 +8607,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1812614903}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkySet_EmptyGameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8487,7 +8713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1822351566}
   - component: {fileID: 1822351567}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8766,9 +8992,9 @@ GameObject:
   - component: {fileID: 1890599271}
   - component: {fileID: 1890599273}
   - component: {fileID: 1890599272}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8873,9 +9099,9 @@ GameObject:
   - component: {fileID: 1891950417}
   - component: {fileID: 1891950419}
   - component: {fileID: 1891950418}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9019,7 +9245,7 @@ PrefabInstance:
     - target: {fileID: 7243497016923999256, guid: 4d5f7d4c29b35473abf3f0340cb89993,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7243497016923999256, guid: 4d5f7d4c29b35473abf3f0340cb89993,
         type: 3}
@@ -9052,9 +9278,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1953340504}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSet_EmptyGameObject (7)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9087,9 +9313,9 @@ GameObject:
   - component: {fileID: 1971031380}
   - component: {fileID: 1971031382}
   - component: {fileID: 1971031381}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9462,9 +9688,9 @@ GameObject:
   - component: {fileID: 2013391220}
   - component: {fileID: 2013391222}
   - component: {fileID: 2013391221}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9568,7 +9794,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2027830195}
   - component: {fileID: 2027830196}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9649,9 +9875,9 @@ GameObject:
   - component: {fileID: 2029390374}
   - component: {fileID: 2029390376}
   - component: {fileID: 2029390375}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9755,7 +9981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2040089690}
   - component: {fileID: 2040089691}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9834,7 +10060,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2042640981}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkySet_EmptyGameObject (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9867,7 +10093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2067383375}
   - component: {fileID: 2067383376}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9948,9 +10174,9 @@ GameObject:
   - component: {fileID: 2098994164}
   - component: {fileID: 2098994166}
   - component: {fileID: 2098994165}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GrassSprite (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10085,7 +10311,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2124426942
 GameObject:
@@ -10096,7 +10322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2124426943}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkySet_EmptyGameObject (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10205,9 +10431,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2131332376}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSet_EmptyGameObject (10)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10239,7 +10465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8839256230581697494}
   - component: {fileID: 7715042513993083268}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkyTileSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10291,7 +10517,7 @@ PrefabInstance:
     - target: {fileID: 5379679596396713089, guid: 5ac244ad1e492436bb6ffe08b1f171c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5379679596396713089, guid: 5ac244ad1e492436bb6ffe08b1f171c2,
         type: 3}
@@ -10324,7 +10550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7507180431778943192}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SkySet_EmptyGameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

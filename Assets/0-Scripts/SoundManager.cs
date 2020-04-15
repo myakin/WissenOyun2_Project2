@@ -26,9 +26,14 @@ public class SoundManager : MonoBehaviour {
         if(!hasBeganPlayingSounds) {
             hasBeganPlayingSounds = true;
             wings.Stop();
+
+            float descentPitchValue = Random.Range(0.5f, 2f);
+            descent.pitch = descentPitchValue;
             descent.Play();
         }
         // if (!hit.isPlaying) {
+            float pitchValue = Random.Range(0.7f, 4f);
+            hit.pitch = pitchValue;
             hit.Play();
         // }
     }

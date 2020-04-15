@@ -83,6 +83,9 @@ public class PlayerControllerForManuelSetup : MonoBehaviour {
         if (!isDead && Input.GetMouseButtonDown(0)) {
             ApplyAntiGravityForce();
         }
+        if (!isDead && Input.GetMouseButtonDown(1)) {
+            Fire();
+        }
 
         //Touch tou = Input.GetTouch(0);
         //if (tou.phase == TouchPhase.Began) {
@@ -103,7 +106,7 @@ public class PlayerControllerForManuelSetup : MonoBehaviour {
     private void Die() {
         GetComponent<Animator>().SetBool("isDead", true);
         // playerSpriteRenderer.sprite = deadSprite;
-        ObjectSpawnHandler.Instance.SpawnObject("CrashPuff_Particle System", transform.position, Quaternion.identity, true);
+        ObjectSpawnHandler.Instance.SpawnObject("CrashPuff_Particle System", transform.position, Quaternion.identity);
         isDead = true;
         GameObject.FindGameObjectWithTag("UIInterface").GetComponent<UIManager>().ActivteMainMenu();
         SoundManager.Instance.PlaySoundsOnFail();
@@ -140,5 +143,8 @@ public class PlayerControllerForManuelSetup : MonoBehaviour {
     public void SetScore(int aScore) {
         score = aScore;
         GameObject.FindGameObjectWithTag("UIInterface").GetComponent<UIManager>().UpdateScoreText(score.ToString());
+    }
+    private void Fire() {
+        ObjectSpawnHandler.Instance.SpawnObject("PlayerBullet", transform.position + (transform.right * 1f) + (-transform.up * 0.04f), Quaternion.identity);
     }
 }

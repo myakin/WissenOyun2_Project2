@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1480380781169380080}
   - component: {fileID: 9128697885791335165}
   - component: {fileID: 3946643145169431077}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColumnShortSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 4148770926045162744}
   - component: {fileID: 5540534560858561907}
   - component: {fileID: 6856578583384114900}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColumnShortSprite (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 535256251288353585}
   - component: {fileID: 2122828531900513722}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColumnShortSprite_Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,6 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetY: 2
+  duration: 1.5
 --- !u!1 &5980824025593576005
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,9 +272,9 @@ GameObject:
   - component: {fileID: 3162393803106540103}
   - component: {fileID: 7863511589514376680}
   - component: {fileID: 8579296531329275312}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColumnType4
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -336,7 +337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6912854708515261979}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DummyRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6180041810627655549}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DummyLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +400,7 @@ GameObject:
   - component: {fileID: 1112208589389745060}
   - component: {fileID: 2600991646273409382}
   - component: {fileID: 3863854469438141220}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColumnShortSprite_Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,3 +509,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offsetY: 2
+  duration: 1.5

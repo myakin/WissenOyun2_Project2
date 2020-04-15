@@ -33,7 +33,9 @@ public class UIManager : MonoBehaviour {
     }
 
     private void LoadCheckpoint() {
-         GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<PlayerControllerForManuelSetup>().ResumeLastSave();  
+        backgroundPanel.gameObject.SetActive(false);
+        mainMenuPanel.gameObject.SetActive(false);
+        GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<PlayerControllerForManuelSetup>().ResumeLastSave();  
     }
 
     private void GetHiScores() {

@@ -20,7 +20,7 @@ public class ObjectSpawnHandler : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
 
-    public void SpawnObject(string nameOfObjectToSpawn, Vector3 aWorldPosition, Quaternion aWorldRotation, bool isEffect = false) {
+    public void SpawnObject(string nameOfObjectToSpawn, Vector3 aWorldPosition, Quaternion aWorldRotation) {
         if (objectPool.ContainsKey(nameOfObjectToSpawn) && objectPool[nameOfObjectToSpawn].Count>0) {
             GameObject objToSpawn = objectPool[nameOfObjectToSpawn][0];
             objectPool[nameOfObjectToSpawn].RemoveAt(0);

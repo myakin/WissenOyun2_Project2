@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3162393803106540103}
   - component: {fileID: 7863511589514376680}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColumnType2
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 5075394772104344747}
   - component: {fileID: 5564043852109709792}
   - component: {fileID: 6486683083308983842}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColumnShortSprite (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6912854708515261979}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DummyRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6180041810627655549}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: DummyLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 4437439890637835270}
   - component: {fileID: 1112208589389745060}
   - component: {fileID: 2600991646273409382}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColumnShortSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
